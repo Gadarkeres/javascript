@@ -18,16 +18,16 @@
 
     <script>
         function verificar() {
-            var pais = window.document.getElementById('origem').value.toLowerCase();
-            var res = window.document.getElementById('res');
-            
-            if (pais === 'brasil') {
-                res.innerHTML = `Você é Brasileiro!`;
-            } else {
-                res.innerHTML = `Você é Estrangeiro!`;
+            var pais = window.document.getElementById('origem').value
+            var res = window.document.getElementById('res')
+
+            if (pais =='brasil'){
+                res.innerHTML = 'Você é brasileiro!'
+            } else{
+                res.innerHTML = `Você é Estrangeiro`
             }
         }
     </script>
-    
 </body>
 </html>
+
