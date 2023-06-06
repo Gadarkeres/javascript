@@ -25,3 +25,13 @@ footer{
     font-style: italic;
     text-align: center;
 }
+img#imagem{
+    width: 250px;
+    display: block;
+    margin:auto;
+    padding-top: 15px;
+    
+}
+section #msg{
+    text-align: center;
+}
