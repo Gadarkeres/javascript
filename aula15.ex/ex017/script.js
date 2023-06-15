@@ -6,11 +6,7 @@ function tabuada(){
     } else{
         var num = Number(num.value)
        var c = 1
-        while (c <= 10){
-            var item = document.createElement('option')
-            item.text = `${n} x ${c} = ${n*c}`
-            tab.appendChild(item)
-            c++
-        }
-    }
-}
+        for (c = 1; c <= 10; c++)
+        
+    }   
+}   

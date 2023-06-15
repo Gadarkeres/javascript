@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de media</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bloco">
+        <h1 id="titulo">Insira as notas soliciadas abaixo: <i id="italic">(exemplo:6.0)</i> </h1>
+        <p><label for="nt1">Nota 1:</label>
+        <input type="number" id="nt1" name="nt1"></p>
+        <p><label for="nt2"> Nota 2:</label>
+        <input type="number" id="nt2" name="nt2"></p>
+        <p><input id="botao" type="button" value="Verificar Média" onclick="calcular()"></p>
+
+        <div id="res">O resultado aparecerá aqui..</div>
+    </div>
+    
+    
+</body>
+<script>
+    function calcular(){
+        var i1 = document.getElementById('nt1')
+        var i2 = document.getElementById('nt2')
+        var res = document.getElementById('res')
+        var n1 = Number(i1.value)
+        var n2 = Number(i2.value)
+        
+         if (n1 > 10 || n2 > 10.0){
+            res.innerHTML = '[ERRO] por favor informe um numero menor do que 10.'; return;
+         }
+         if (n1 < 0 || n2 < 0){
+            res.innerHTML= '[ERRO] por favor informe um numero maior do que 0.'; return;
+         }
+        
+         var m = (n1 + n2) / 2;
+        if (m < 6.0){
+            res.innerHTML = `A Media do aluno é ${m}, portanto ele esta reprovado!. \u{1F923} \u{1F923}	`
+        }  else {
+            res.innerHTML = `A Media do aluno é ${m}, portanto ele esta aprovado!. \u{1F929} \u{1F929}`
+        }
+        
+    }  
+
+
+
+             
+
+</script>
+</html>
