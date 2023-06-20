@@ -4,4 +4,4 @@ console.log(`nosso vetor é o ${num}`)
 console.log(`o primeiro valor do vetor é ${num[0]}`)
 // consolelog (num01)... num02...*/
 
-console.log(num.indexOf(3))
+console.log(num.indexOf(3))  
